@@ -3,7 +3,7 @@ This hiyoko-rain can be make it 🐣 rain on your screen.
 ("hiyoko" means chick in Japanese)
 
 ```bash
-$ npm hiyoko-rain
+$ npx hiyoko-rain
 
                                    🐣
                                                                             🐣
@@ -37,7 +37,7 @@ $ npm hiyoko-rain
 `-e` can specify a character
 
 ```bash
-$ npm hiyoko-rain -e 🍺
+$ npx hiyoko-rain -e 🍺
 
                                                                                                               🍺
                                                                                   🍺
