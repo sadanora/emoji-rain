@@ -1,5 +1,5 @@
 # hiyoko-rain
-hiyoko-rain can rain 🐤 on your screen.
+This hiyoko-rain can be make it 🐤 rain on your screen.
 ("hiyoko" means chick in Japanese)
 
 ```bash

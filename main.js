@@ -8,7 +8,7 @@ const argv = minimist(process.argv.slice(2), {
     s: 'speed'
   },
   default: {
-    e: '🐤',
+    e: '🐣',
     s: 150
   }
 })
