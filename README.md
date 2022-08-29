@@ -1,12 +1,9 @@
-# emoji-rain
-emoji rain on your terminal
-
-# Description
-emoji-rain can rain emojis on your terminal.
-Default emoji is 🐤.
+# hiyoko-rain
+hiyoko-rain can rain 🐤 on your screen.
+("hiyoko" means chick in Japanese)
 
 ```bash
-$ npm emoji-rain
+$ npm hiyoko-rain
 
                                                                             🐤
                                                                   🐤
@@ -43,7 +40,7 @@ $ npm emoji-rain
 `-e` can specify a character
 
 ```bash
-$ npm emoji-rain -e 🍺
+$ npm hiyoko-rain -e 🍺
 
                                                                                                               🍺
                                                                                   🍺
@@ -76,5 +73,5 @@ Lower values ​​are faster.
 
 # installation
 ```bash
-$ npm install emoji-rain
+$ npm install hiyoko-rain
 ```

@@ -1,18 +1,20 @@
 {
-  "name": "emoji-rain",
+  "name": "hiyoko-rain",
   "version": "1.0.0",
-  "description": "emoji-rain can rain emojis on your terminal.",
+  "description": "hiyoko-rain makes it 🐤's rain on your screen.",
   "main": "main.js",
   "bin": {
-    "emoji-rain": "./main.js"
+    "hiyoko-rain": "./main.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sadanora/emoji-rain"
+    "url": "git+https://github.com/sadanora/hiyoko-rain.git"
   },
-  "homepage": "https://github.com/sadanora/emoji-rain",
+  "homepage": "https://github.com/sadanora/hiyoko-rain.git",
   "keywords": [
-    "emoji"
+    "emoji",
+    "hiyoko",
+    "chick"
   ],
   "license": "MIT",
   "devDependencies": {
