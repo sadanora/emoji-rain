@@ -13,7 +13,7 @@ const argv = minimist(process.argv.slice(2), {
   }
 })
 
-const run = (emoji, speed) => {
+const run = (emoji, interval) => {
   const chars = {}
 
   setInterval(() => {
@@ -32,7 +32,7 @@ const run = (emoji, speed) => {
         process.stdout.write(`\x1b[${chars[key]};${key}H \x1b[${chars[key]};${key}H${emoji} \x1b[0;0H`)
       }
     })
-  }, speed)
+  }, interval)
 }
 
 run(argv.e, argv.s)
