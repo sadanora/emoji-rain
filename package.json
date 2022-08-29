@@ -1,4 +1,20 @@
 {
+  "name": "emoji-rain",
+  "version": "1.0.0",
+  "description": "emoji-rain can rain emojis on your terminal.",
+  "main": "main.js",
+  "bin": {
+    "emoji-rain": "./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadanora/emoji-rain"
+  },
+  "homepage": "https://github.com/sadanora/emoji-rain",
+  "keywords": [
+    "emoji"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.23.0",
     "eslint-config-standard": "^17.0.0",
