@@ -1,6 +1,6 @@
 {
   "name": "hiyoko-rain",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hiyoko-rain makes it 🐣's rain on your screen.",
   "main": "main.js",
   "bin": {
