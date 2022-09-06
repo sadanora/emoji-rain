@@ -15,10 +15,10 @@ const argv = minimist(process.argv.slice(2), {
 
 const run = (emoji, interval) => {
   let positions = []
+  const startingLine = 3
 
   setInterval(() => {
     const [column, line] = process.stdout.getWindowSize()
-    const startingLine = 3
     const vanishingLine = line - 1
     const printingColumn = Math.floor(Math.random() * column)
     console.clear()
