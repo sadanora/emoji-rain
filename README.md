@@ -34,7 +34,7 @@ $ npx hiyoko-rain
 ```
 
 ### -e
-`-e` can specify a character
+`-e, --emoji` can specify a character
 
 ```bash
 $ npx hiyoko-rain -e 🍺
@@ -64,9 +64,9 @@ $ npx hiyoko-rain -e 🍺
 
 ```
 
-### -s
-`-s` can change the falling speed of letters.
-Lower values ​​are faster.
+### -i
+`-i, --interval` can change the execution interval in ms.
+Lower values are faster the falling speed of letters.
 default value is 150.
 
 # installation

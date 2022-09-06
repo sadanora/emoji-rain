@@ -5,11 +5,11 @@ const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2), {
   alias: {
     e: 'emoji',
-    s: 'speed'
+    i: 'interval'
   },
   default: {
     e: '🐣',
-    s: 150
+    i: 150
   }
 })
 
@@ -32,4 +32,4 @@ const run = (emoji, interval) => {
   }, interval)
 }
 
-run(argv.e, argv.s)
+run(argv.e, argv.i)
