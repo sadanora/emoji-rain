@@ -14,7 +14,7 @@ const argv = minimist(process.argv.slice(2), {
 })
 
 const run = (emoji, interval) => {
-  const chars = {}
+  let positions = []
 
   setInterval(() => {
     const [column, line] = process.stdout.getWindowSize()
@@ -23,14 +23,11 @@ const run = (emoji, interval) => {
     const printingColumn = Math.floor(Math.random() * column)
     console.clear()
 
-    chars[printingColumn] = startingLine
-    Object.keys(chars).forEach((key) => {
-      if ((chars[key] >= vanishingLine) || (Object.keys(chars).length > column)) {
-        delete chars[key]
-      } else {
-        ++chars[key]
-        process.stdout.write(`\x1b[${chars[key]};${key}H \x1b[${chars[key]};${key}H${emoji} \x1b[0;0H`)
-      }
+    positions.push([printingColumn, startingLine])
+    positions = positions.filter(position => position[1] < vanishingLine)
+    positions.forEach((position) => {
+      ++position[1]
+      process.stdout.write(`\x1b[${position[1]};${position[0]}H \x1b[${position[1]};${position[0]}H${emoji} \x1b[0;0H`)
     })
   }, interval)
 }
