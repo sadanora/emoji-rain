@@ -27,7 +27,7 @@ const run = (emoji, interval) => {
     positions = positions.filter(position => position[1] < vanishingLine)
     positions.forEach((position) => {
       ++position[1]
-      process.stdout.write(`\x1b[${position[1]};${position[0]}H \x1b[${position[1]};${position[0]}H${emoji} \x1b[0;0H`)
+      process.stdout.write(`\x1b[${position[1]};${position[0]}H${emoji} \x1b[0;0H`)
     })
   }, interval)
 }
