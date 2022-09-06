@@ -67,6 +67,7 @@ $ npx hiyoko-rain -e 🍺
 ### -s
 `-s` can change the falling speed of letters.
 Lower values ​​are faster.
+default value is 150.
 
 # installation
 ```bash
