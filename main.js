@@ -16,11 +16,13 @@ const argv = minimist(process.argv.slice(2), {
 const run = (emoji, interval) => {
   let positions = []
   const startingLine = 3
+  const padding = 10
 
   setInterval(() => {
     const [column, line] = process.stdout.getWindowSize()
     const vanishingLine = line - 1
-    const printingColumn = Math.floor(Math.random() * column)
+    const maxPrintingColumn = column - padding
+    const printingColumn = Math.floor(Math.random() * maxPrintingColumn)
     console.clear()
 
     positions.push([printingColumn, startingLine])
